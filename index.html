@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Corso Training</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" alt="" width="150" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#discover">Descobrir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Resumo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#takeaways">Takeaways</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#subscribe">Inscreva-se</a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header class="header py-7">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <div class="col-12 text-container">
+            <h1 class="display-2 text-white mt-3">
+              Explore nossos vídeos de treinamento e seminários
+            </h1>
+            <p class="lead text-white w-75 m-auto mb-4">
+              Seja você um iniciante ou um profissional experiente, nosso
+              conteúdo cuidadosamente selecionado o capacitará a aprimorar suas
+              habilidades e expandir seu conhecimento
+            </p>
+            <a href="#register" class="btn btn-primary text-uppercase">
+              Registrar
+            </a>
+            <a href="#discover" class="btn btn-outline-light text-uppercase">
+              Descobrir
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Image Slider -->
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-slide-to="0"
+                  data-bs-target="#slider"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#slider"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#slider"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                  <img
+                    src="images/header-slide-1.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/header-slide-2.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/header-slide-3.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+              </div>
+              <!-- Buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-slide="prev"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-slide="next"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Register -->
+    <section class="resgiter bg-primary py-6 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Desbloqueie seu potencial com conteúdo envolvente</h2>
+            <p>
+              Nossa ampla variedade de vídeos de treinamento e seminários foi
+              criada para capacitar você com conhecimentos e habilidades
+              <valiosos class=""></valiosos>
+            </p>
+            <ul class="list-unstyled vstack gap-3">
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Ganhe experiência: </strong>nossos vídeos fornecem
+                insights detalhados e dicas práticas para aprimorar sua
+                experiência em vários domínios.
+              </li>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Mantenha-se atualizado: </strong> fique por dentro das
+                últimas tendências e avanços do setor por meio de nossos vídeos
+                informativos e atualizados.
+              </li>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Expanda sua rede: </strong>conecte-se com pessoas com
+                ideias semelhantes e especialistas do setor, promovendo novas
+                conexões e oportunidades.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <form action="#">
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Insira seu Nome"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="email"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Insira seu E-mail"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Insira seu Numero de Telefone"
+                />
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Eu concordo com os termos e condições
+                </label>
+              </div>
+              <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-outline-dark">
+                  registrar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- details 1 -->
+    <section id="discover" class="details py-6 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="images/instructor.jpg"
+              alt=""
+              class="img-fluid rounded-5 mb-4"
+            />
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center flex-column">
+            <h2>
+              Melhore suas habilidades com vídeos de treinamento envolventes
+            </h2>
+            <p>
+              Nossa extensa coleção de vídeos de treinamento é projetada para
+              ajudar você a aprimorar suas habilidades e se destacar em sua área
+              escolhida. Não importa se você está buscando melhorar sua
+              expertise técnica ou desenvolver habilidades sociais essenciais,
+              nossos vídeos fornecem insights valiosos e conhecimento prático.
+            </p>
+            <p>
+              Com instrutores especialistas e conteúdo abrangente, você ganhará
+              confiança e competência para enfrentar desafios e alcançar o
+              sucesso.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- points -->
+    <section class="points pb-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-md-8 offset-md-2">
+            <h2>
+              Desbloqueie seu potencial com vídeos de treinamento envolventes
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 md-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">1</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Melhore suas habilidades</h3>
+                <p>
+                  Nossos vídeos de treinamento fornecem insights abrangentes e
+                  dicas práticas para ajudar você a aprimorar suas habilidades
+                  em vários domínios. De expertise técnica a soft skills, nós
+                  temos tudo o que você precisa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">2</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Fique atualizado</h3>
+                <p>
+                  Mantenha-se atualizado com as últimas tendências e avanços do
+                  setor por meio de nossos vídeos informativos e atualizados.
+                  Fique à frente da curva e amplie seu conhecimento.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">3</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Conecte-se com especialistas</h3>
+                <p>
+                  Nossa plataforma permite que você se conecte com pessoas com
+                  ideias semelhantes e especialistas do setor. Expanda sua rede,
+                  promova novas conexões e desbloqueie novas oportunidades.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">4</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Aprendizagem flexível</h3>
+                <p>
+                  Nossos vídeos de treinamento estão disponíveis sob demanda,
+                  permitindo que você aprenda no seu próprio ritmo e
+                  conveniência. Acesse o conteúdo a qualquer hora, em qualquer
+                  lugar, e personalize sua experiência de aprendizado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">5</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Conhecimento prático</h3>
+                <p>
+                  Obtenha conhecimento prático e aplique-o diretamente a
+                  cenários do mundo real. Nossos vídeos oferecem insights
+                  práticos e dicas práticas para ajudar você a ter sucesso em
+                  seus empreendimentos profissionais.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 md-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">6</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Aprendizagem Contínua</h3>
+                <p>
+                  O aprendizado ao longo da vida é a chave para o crescimento
+                  pessoal e profissional. Explore uma vasta coleção de vídeos de
+                  treinamento e embarque em uma jornada de aprendizado contínuo
+                  e autoaperfeiçoamento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- course summery -->
+    <section id="summary" class="summary bg-light mt-5 w-75 m-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5">Resumo do curso</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="bg-white p-5 shadow">
+              <ul class="list-unstyled">
+                <li class="border-bottom pb-3">
+                  <h5>1. Treinamento abrangente</h5>
+                  <p>
+                    Nossos cursos oferecem treinamento abrangente em uma ampla
+                    gama de tópicos. De fundamentos de nível iniciante a
+                    conceitos avançados, oferecemos conteúdo aprofundado para
+                    atender a alunos de todos os níveis.
+                  </p>
+                </li>
+                <li class="border-bottom pt-3">
+                  <h5>2. Instrutores especialistas</h5>
+                  <p>
+                    Aprenda com especialistas do setor que trazem anos de
+                    experiência e conhecimento para a mesa. Nossos instrutores
+                    são apaixonados por compartilhar seus conhecimentos e ajudar
+                    você a ter sucesso.
+                  </p>
+                </li>
+                <li class="pt-3">
+                  <h5>3. Aplicação prática</h5>
+                  <p>
+                    Acreditamos no aprendizado prático que vai além da teoria.
+                    Nossos cursos focam na aplicação no mundo real, equipando
+                    você com as habilidades e o conhecimento necessários para se
+                    destacar em sua área.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- details 2 -->
+    <section class="details py-6 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="images/audience.jpg"
+              alt=""
+              class="img-fluid rounded-5 mb-4"
+            />
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center flex-column">
+            <h2>
+              Eleve sua jornada de aprendizagem com seminários de especialistas
+            </h2>
+            <p>
+              Participe de nossos seminários liderados por especialistas e
+              desbloqueie novas possibilidades em seu desenvolvimento pessoal e
+              profissional. Nossos seminários abrangem uma gama diversificada de
+              tópicos, desde liderança e inovação até crescimento pessoal e
+              produtividade.
+            </p>
+            <p>
+              Participe de discussões envolventes, workshops interativos e
+              valiosas oportunidades de networking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
